@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Flip핵심페이지.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" href="플립_로고/favicon-16x16.png">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Flip-전자책 70%할인 이벤트중!</title>
+    
+</head>
+
+    
+
+<body>
+<!-- 
+    <header>
+        <nav>
+       
+            <a href="Flip랜딩페이지.html">
+                <img src="이미지_자료/플립로고/플립로고-02.png" alt="flip-logo">
+            </a>
+
+         
+            <ul class="navigation">
+                <li><a href="#">브랜드소개</a></li>
+                <li><a href="Flip핵심페이지.html">전자책</a></li>
+                <li><a href="#">오디오북</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">이벤트</a></li>
+            </ul>
+
+          
+            <div class="submit-btn">
+                <button type="submit" class="log-in">로그인</button>
+                <button type="button" class="service-center">고객센터</button>
+                
+           
+                <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <img src="일러배경이미지/반응형_햄버거_버튼.png" alt="Hamburger Menu">
+                </button>
+            </div>
+        </nav>
+
+       
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+
+            <div class="offcanvas-header">
+                <h5 id="offcanvasScrollingLabel">메뉴</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul>
+                    <li><a href="#">브랜드소개</a></li>
+                    <li><a href="Flip핵심페이지.html">전자책</a></li>
+                    <li><a href="#">오디오북</a></li>
+                    <li><a href="#">커뮤니티</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+        </div>
+    </header> -->
+
+    <header>
+      <nav>
+          <a class="flip-logo"
+              href="랜딩페이지-수정.html" alt="flip-logo"> <img src="이미지_자료/플립로고/플립로고-02.png" alt="flip-logo"></a>
+
+          <ul class="navigation">
+              <li><a href="#">브랜드소개</a></li>
+              <li><a
+                      href="Flip핵심페이지.html">전자책</a>
+              </li>
+              <li><a href="#">오디오북</a></li>
+              <li><a href="#">커뮤니티</a></li>
+              <li><a href="#">이벤트</a></li>
+          </ul>
+
+          <div class="submit-btn">
+              <button type="submit" class="log-in">로그인</button>
+              <button type="button" class="service-center">고객센터</button>
+
+            
+                  <!-- 햄버거 버튼 -->
+                   <div class="movile-navbar">
+                      <button class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                          <img src="일러배경이미지/반응형_햄버거_버튼.png" alt="Hamburger Menu">
+                      </button>
+                      <a class="movile-logo"
+                      href="랜딩페이지-수정.html" alt="movile"> <img src="이미지_자료/플립로고/플립로고-02.png" alt="movile-logo"></a>
+
+
+                      <button type="submit" class="movilelog-in">로그인</button>
+                   </div>
+                
+                  
+                  
+
+
+                 
+              
+                  <!-- 오프캔버스 메뉴 -->
+                  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                      <div class="offcanvas-header">
+                          <h5 id="offcanvasScrollingLabel">메뉴</h5>
+                          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                          <ul>
+                              <li><a href="#">브랜드소개</a></li>
+                              <li><a href="Flip핵심페이지.html">전자책</a></li>
+                              <li><a href="#">오디오북</a></li>
+                              <li><a href="#">커뮤니티</a></li>
+                              <li><a href="#">이벤트</a></li>
+                              <li><a href="#">고객센터</a></li>
+                          </ul>
+                      </div>
+                  </div>
+            
+              
+            
+
+
+          </div>
+
+      </nav>
+  </header>
+  
+    <div class="carousel-container">
+       
+        <!-- <div class="section1 main carousel">
+            <button class="prev" onclick="moveSlide(-1)">&lt;</button>
+            <button class="next" onclick="moveSlide(1)">&gt;</button>
+            <div class="carousel-slide">
+             
+                <img src="전자책-서브페이지2이미지/상단배너_대지_1_사본.png" alt="1">
+            </div>
+            <div class="carousel-slide">
+              
+                <img src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-02.png" alt="2">
+            </div>
+            <div class="carousel-slide">
+                
+                <img style="" src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-03.png" alt="3">
+               
+            </div>
+            <div class="carousel-slide">
+               
+                <img src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-01.png" alt="4">
+               
+            </div>
+          
+
+
+            <div class="free-viewer-btn">
+                <button class="free-sub">3개월 무료체험 하러가기</button>
+                <button class="viewer-install">뷰어 다운로드</button>
+                <button class="top">TOP</button>
+            </div>
+        </div>  -->
+
+        <div class="section1 swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-01.png" alt=""></div>
+            <div class="swiper-slide"><img src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-02.png" alt=""></div>
+            <div class="swiper-slide"><img src="서브페이지_이미지/전자책-서브_도서이미지/상단배너용-이미지/새로뽑은이미지2-03.png" alt=""></div>
+            <!-- <div class="swiper-slide"><img src="서브페이지_이미지/" alt=""></div>
+            -->
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="box section-box2">
+          <a class="category-title" href="#"><h2>오늘,<span class="flip">Flip</span>의 발견</h2></a>
+          <div class="section2 book-slider-container2">
+            
+              <div class="book-slide">
+                <img src="일러배경이미지/책과_이벤트/Untitled-2-11.png" alt="Book 6">
+                <p class="bold-p">"갈등 속에서 빛나는 진실"</p>
+              </div>
+              <div class="book-slide">
+                <img src="일러배경이미지/책과_이벤트/Untitled-2-12.png" alt="Book 7">
+                <p class="bold-p">"미로 속 숨겨진 비밀을 파헤쳐라!"
+              </p>
+              </div>
+              <div class="book-slide">
+                <img src="일러배경이미지/책과_이벤트/Untitled-2-13.png" alt="Book 8">
+                <p class="boldp">"겨울, 그 속에 숨겨진 따뜻한 이야기."</p>
+              </div>
+              <div class="book-slide">
+                <img src="일러배경이미지/책과_이벤트/Untitled-2-14.png" alt="Book 9">
+                <p class="boldp">"우주와 생명, 마지막 희망을 찾아!"</p>
+              </div>
+              <div class="book-slide">
+                <img src="일러배경이미지/책과_이벤트/Untitled-2-15.png" alt="Book 10">
+                <p class="bold-p">"어둠 속에서 찾아낸 희망의 빛."</p>
+              </div>
+            </div>
+        </div>
+       
+  
+<div class="box section-box3">
+  <a class="category-title" href="#"><h2>편집자 추천! 2024년 베스트 도서</h2></a>
+  
+<div class="section3 book-slider-container2 ">
+    
+
+ 
+  <div class="book-slide">
+    <img src="서브페이지_이미지/전자책-서브_도서이미지/2024_편집자_추천도서/편집자-2.jpg" alt="Book 6">
+    <p class="bold-p">"심리의 깊이를 파고든 걸작, 지금 바로 만나보세요!"</p>
+  </div>
+  <div class="book-slide">
+    <img src="서브페이지_이미지/전자책-서브_도서이미지/2024_편집자_추천도서/편집자-1.jpg" alt="Book 7">
+    <p class="bold-p">"일상 속 진지한 대화, 편의점에서 펼쳐지는 특별한 이야기!"</p>
+  </div>
+  <div class="book-slide">
+    <img src="서브페이지_이미지/전자책-서브_도서이미지/2024_편집자_추천도서/편집자-3.jpg" alt="Book 8">
+    <p class="bold-p">"꿈을 쫓는 당신에게 보내는 한 권의 응원, ‘나의 돈키호테’!"</p>
+  </div>
+  <div class="book-slide">
+    <img src="서브페이지_이미지/전자책-서브_도서이미지/2024_편집자_추천도서/편집자-4.jpg" alt="Book 9">
+    <p class="bold-p">"미래의 환경을 담은 책, 기후 변화와 생명의 연결 고리!"</p>
+  </div>
+  <div class="book-slide">
+    <img src="서브페이지_이미지/전자책-서브_도서이미지/2024_편집자_추천도서/편집자-5.jpg" alt="Book 10">
+    <p class="bold-p">"사랑의 복잡함을 풀어낸 심도 있는 이야기, 결함 속의 진실을 찾아서!"</p>
+  </div>
+</div>
+    
+</div>
+  
+
+<div class="box section-box4">
+  <section style="margin: 50px 0px;" class="section4 top-books-section">
+
+    <a class="category-title" href="#"><h2>주간 베스트</h2></a>
+      <div class="top-books-container">
+      
+  
+  
+        <div class="top-book-item">
+          <div class="rank">1위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/1위.jpg" alt="Book 1">
+  <h5>소년이 온다</h5>
+          <p>한강</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">2위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/2위.jpg" alt="Book 2">
+          <h5>작별하지 않는다</h5>
+          <p>한강</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">3위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/3위.jpg" alt="Book 3">
+          <h5>채식주의자</h5>
+          <p>한강</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">4위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/4위.jpg" alt="Book 4">
+          <h5>새들이 남쪽으로 가는 날</h5>
+          <p>리사 리드센</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">5위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/5위.jpg" alt="Book 5">
+          <h5>소득혁명</h5>
+          <p>브라이언 페이지</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">6위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/6위.jpg" alt="Book 6">
+          <h5>FUTURE SELF</h5>
+          <p>벤저민 하디</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">7위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/7위.jpg" alt="Book 7">
+          <h5>모순</h5>
+          <p>양귀자</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">8위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/8위.jpg" alt="Book 8">
+          <h5>행동하지 않으면 인생은 바뀌지 않는다</h5>
+          <p>브라이언 트레이시</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">9위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/9위.jpg" alt="Book 9">
+          <h5>서랍에 저녁을 넣어 두었다</h5>
+          <p>한강</p>
+        </div>
+        <div class="top-book-item">
+          <div class="rank">10위</div>
+          <img src="서브페이지_이미지/전자책-서브_도서이미지/베스트/10위.jpg" alt="Book 10">
+          <h5>이처럼 사소한 것들</h5>
+          <p>클레어 키건</p>
+        </div>
+      </div>
+    </section>
+  
+</div>
+
+
+<div class="box section-box5">
+  <a class="category-title" href="#"><h2>겨울나기 소설대전</h2></a>
+
+  <div class="section5 book-slider-container2 ">
+  
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/겨울나기_소설대전_section4/겨울1.jpg" alt="Book 6">
+        <h5>잘못된 장소 잘못된 시간</h5>
+        <p>질리언 매캘리스터</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/겨울나기_소설대전_section4/겨울2.jpg" alt="Book 7">
+        <h5> Cheri</h5>
+        <p>Colette, Sidonie-Gabrielle Claudine , Lemke, Ulrike</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/겨울나기_소설대전_section4/겨울3.jpg" alt="Book 8">
+        <h5>존재의 모든 것을</h5>
+        <p>시오타 다케시</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/겨울나기_소설대전_section4/겨울4.jpg" alt="Book 9">
+        <h5>겨울철 한정 봉봉 쇼콜라 사건</h5>
+        <p>요네자와 호노부</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/겨울나기_소설대전_section4/겨울5.jpg" alt="Book 10">
+        <h5>오래된 골동품 상점</h5>
+        <p>찰스 디킨스</p>
+      </div>
+    </div>
+</div>
+  
+<div class="box section-box6">
+  <a class="category-title" href="#">  <h2>2025! 소설가 50인의 선택</h2></a>
+  
+  <div class="section6 book-slider-container2 ">
+   
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/소설가50인의선택/소설가1.jpg" alt="Book 6">
+        <h5>영원한 천국</h5>
+        <p>정유정</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/소설가50인의선택/소설가2.jpg" alt="Book 7">
+        <h5>밤이 영원할 것처럼</h5>
+        <p>서유미</p>
+        
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/소설가50인의선택/소설가3.jpg" alt="Book 8">
+        <h5>모우어</h5>
+        <p>천선란 </p>
+       
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/소설가50인의선택/소설가4.jpg" alt="Book 9">
+        <h5>조금 망한 사랑</h5>
+
+        <p>김지연</p>
+      
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/소설가50인의선택/소설가5.jpg" alt="Book 10">
+        <h5>시티-뷰</h5>
+        <p>우신영</p>
+       
+      </div>
+    </div>
+</div>
+   
+<div class="box section-box7">
+  <a class="category-title" href="#"><h2>MD's Pick</h2></a>
+    
+  <section class="section7 event-banner">
+      <div class="banner-item">
+          <img  class="section7-img" src="서브페이지_이미지/전자책-서브_도서이미지/홍보용-북카드-배너1/사랑과결함.jpg" alt="">
+          
+      </div>
+      <div class="banner-item">
+          <img class="section7-img" src="서브페이지_이미지/전자책-서브_도서이미지/홍보용-북카드-배너1/존재.jpg" alt="">
+          
+      </div>
+      <div class="banner-item">
+          <img  class="section7-img" src="서브페이지_이미지/전자책-서브_도서이미지/홍보용-북카드-배너1/시티뷰.jpg" alt="">
+         
+        
+      </div>
+  </section>
+</div>
+   
+
+<div class="box section-box8">
+  <a class="category-title" href="#"><h2>나의 하루를 위로받고 싶을 때</h2></a>
+  <div class="section8 book-slider-container2 ">
+  
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/위로/강현식.jpeg" alt="Book 6">
+        <h5>욕 좀 먹고 살아도 괜찮습니다</h5>
+        <p>강현식</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/위로/고요.jpeg" alt="Book 7">
+        <h5>나는 내가 왜 살아야 하는지 몰랐습니다</h5>
+        <p>고요</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/위로/김재식.jpeg" alt="Book 8">
+        <h5>좋은 사람에게만 좋은 사람이면 돼</h5>
+        <p>김재식</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/위로/김준.jpeg" alt="Book 9">
+        <h5>쓸모없는 것들이 우리를 구할 거야</h5>
+        <p>김준</p>
+      </div>
+      <div class="book-slide">
+        <img src="서브페이지_이미지/전자책-서브_도서이미지/위로/김태균.jpeg" alt="Book 10">
+        <h5>이제 그냥 즐기려구요</h5>
+        <p>김태균</p>
+      </div>
+    </div>
+
+</div>
+  
+
+<div class="box section-box9">
+  <a class="category-title" href="#"><h2>이벤트</h2></a>
+  <section class="section9 event-banner">
+      <div class="banner-item">
+          <img class="section9-banner" src="서브페이지_이미지/전자책-서브_도서이미지/이벤트배너2-01.png" alt="">
+       
+      </div>
+      <div class="banner-item">
+        
+          <img class="section9-banner" src="서브페이지_이미지/전자책-서브_도서이미지/이벤트배너2-02.png" alt="">
+        
+      </div>
+      <div class="banner-item">
+        <img class="section9-banner" src="서브페이지_이미지/전자책-서브_도서이미지/이벤트배너2-03.png" alt="">
+       
+        
+      </div>
+  </section>
+
+</div>
+  
+
+<section class="section10">
+   <p>"책이 전하는 감동,<br> <span class="flip">Flip</span>에서 언제나 함께하세요!</p> 
+</section>
+
+
+
+</div>
+
+<!-- <footer>
+
+    <div class="information1">
+        <h3>㈜ FlipSpace Inc.</h3>
+        <br>
+        <p>대표: 홍길동<br>
+            사업자 등록번호: 123-45-67890 <br>
+            주소: 서울특별시 강남구 테헤란로 123, 4층</p>
+        <address>이메일: <a href="malito:support@flipspace.com">support@flipspace.com</a></address>
+        <address>고객센터:<a href="tel:1234-5678">1234-5678</a>(평일 09:00~18:00)</address>
+        <p>정책 및 이용 약관 ㅣ<a href="">이용약관></a>
+            <a href="">개인정보처리방침></a>
+            <a href="">환불 및 취소 정책></a></p>
+    </div>  
+    
+
+    <div class="information2">
+
+        <a href="#"><img class="icon" src="일러배경이미지/페이스북_카카오톡_이미지-01.png" alt=""></a>
+        <a href="#"><img class="icon" src="일러배경이미지/페이스북_카카오톡_이미지-02.png" alt=""></a>
+        <a href="#"><img class="icon" src="일러배경이미지/카카오톡아이콘-01.png" alt=""></a>
+
+        <p class="copyright">© 2024 FlipSpace. All Rights Reserved.</p>
+
+
+    </div>
+
+
+
+
+
+
+</footer> -->
+
+<footer> 
+  <div class="information1">
+  <h3>㈜ FlipSpace Inc.</h3>
+  <br>
+  <p>대표: 홍길동<br>
+      사업자 등록번호: 123-45-67890 <br>
+      주소: 서울특별시 강남구 테헤란로 123, 4층</p>
+  <address>이메일: <a class="info1" href="malito:support@flipspace.com">support@flipspace.com</a></address>
+  <address>고객센터:<a class="info1"  href="tel:1234-5678">1234-5678</a>(평일 09:00~18:00)</address>
+  <p>정책 및 이용 약관 ㅣ<a class="info1"  href="">이용약관></a>
+      <a class="info1"  href="">개인정보처리방침></a>
+      <a class="info1"  href="">환불 및 취소 정책></a>
+  </p>
+</div>
+
+
+<div class="information2">
+
+  <a href="#"><img class="icon" src="일러배경이미지/페이스북_카카오톡_이미지-01.png" alt=""></a>
+  <a href="#"><img class="icon" src="일러배경이미지/페이스북_카카오톡_이미지-02.png" alt=""></a>
+  <a href="#"><img class="icon" src="일러배경이미지/카카오톡아이콘-01.png" alt=""></a>
+
+  <p class="copyright">© 2024 FlipSpace. All Rights Reserved.</p>
+
+
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+
+        <script class="header-script">
+            function toggleSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    
+    // 사이드바가 닫혀 있으면 열고, 열려 있으면 닫기
+    if (sidebar.style.left === '-250px') {
+        sidebar.style.left = '0';  // 사이드바 열기
+    } else {
+        sidebar.style.left = '-250px';  // 사이드바 닫기
+    }
+}
+
+        </script>
+
+      <!-- <script class="section1-script">
+        let currentIndex = 0;
+
+function moveSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-slide');
+    const totalSlides = slides.length;
+    currentIndex = (currentIndex + direction + totalSlides) % totalSlides;  
+
+    const carousel = document.querySelector('.carousel');
+    carousel.style.transform = `translateX(-${currentIndex * 100}%)`;
+}
+
+
+setInterval(() => {
+    moveSlide(1);
+}, 5000);
+
+      </script> -->
+    
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script class="section1-script">
+        var swiper = new Swiper(".mySwiper", {
+          cssMode: true,
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+          },
+          mousewheel: true,
+          keyboard: true,
+          loop:true,
+        });
+      </script>
+</body>
+
+        
+
+
+
+</html>
